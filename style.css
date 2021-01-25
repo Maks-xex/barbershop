@@ -1,0 +1,61 @@
+#header {
+	background-color:black;
+	margin-bottom:-2px;
+	position: relative;
+    height: 100px;
+    width: auto;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.about{
+	text-align:center;
+	flex-grow:1;
+	font-family:Arial;
+	font-size:;
+	color:white;
+	text-decoration:none;
+}
+.news{
+	flex-grow:1;
+	font-family:Arial;
+	font-size:;
+	text-align:center;
+	color:white;
+	text-decoration:none;
+}
+.pricelist{
+	flex-grow:1;
+	text-decoration:none;
+	font-family:Arial;
+	text-align:center;
+	font-size:;
+	color:white;
+}
+.shop{
+	text-decoration:none;
+	flex-grow:1;
+	font-family:Arial;
+	text-align:center;
+	font-size:;
+	color:white;
+}
+.kontakt{
+	text-decoration:none;
+	flex-grow:1;
+	font-family:Arial;
+	text-align:center;
+	font-size:;
+	color:white;
+}
+.enter{
+	text-decoration:none;
+	flex-grow:1;
+	font-family:Arial;
+	font-size:;
+	text-align:center;
+	color:white;
+	flex-grow:1;
+}
