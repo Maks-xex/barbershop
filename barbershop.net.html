@@ -3,16 +3,135 @@
 <head>
 <meta charset="utf-8">
 <link href="style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <title>BarberShop</title>
-<body>
-<div id="header">
-<a class="about" href="/">Информация</a>
-<a class="news" href="/">Новости</a>
-<a class="pricelist" href="/">Прайс-лист</a>
-<a class="shop" href="/">Магазин</a>
-<a class="kontakt" href="/">Контакты</a>
-<a class="enter" href="/">Вход</a>
-</div>
-</body>
 </head>
+<body>
+	<header class="main-header">
+		<nav class="Header">
+			<ul class="site-nav">
+				<li class="about">
+					<a class="nav" href="/">Информация</a>
+				</li>
+				<li class="nav-news">
+					<a class="nav" href="/">Новости</a>
+				</li>
+				<li class="pricelist">
+					<a class="nav" href="/">Прайс-лист</a>
+				</li>
+				<li class="shop">
+					<a class="nav" href="/">Магазин</a>
+				</li>
+				<li class="contact">
+					<a class="nav" href="/">Контакты</a>
+				</li>
+			</ul >
+			<ul class="enter">
+				<li>
+					<a class="nav" href="/"><img id="login" src="login.svg" alt="login" width="auto" height="auto">Вход</a>
+				</li>
+			</ul>
+		</nav>
+			<a class="logo">
+				<img src="index-logo.svg" width="368" height="153" alt="logo barbershop">
+			</a>
+	</header>
+	<main class="main">
+	<h1 class="v-hiden">Барбершоп</h1>
+	<section class="Benefits">
+		<h2 class="v-hiden">Преимущества</h2>
+		<ul class="Benefits-nav">
+			<li>
+				<h3>Быстро</h3>
+				<svg 
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				width="30px" height="29px">
+				<path fill-rule="evenodd"  fill="rgb(247, 244, 241)"
+				d="M0.867,14.728 L15.009,0.585 L29.151,14.728 L15.009,28.870 L0.867,14.728 Z"/>
+				</svg>
+				<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+			</li>
+			<li>
+				<h3>Круто</h3>
+				<svg 
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				width="30px" height="29px">
+				<path fill-rule="evenodd"  fill="rgb(247, 244, 241)"
+				d="M0.867,14.728 L15.009,0.585 L29.151,14.728 L15.009,28.870 L0.867,14.728 Z"/>
+				</svg>
+				<p>Забудьте, как вы стриглись раньше.<br> Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+			</li>
+			<li>
+				<h3>Дорого</h3>
+				<svg
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				width="30px" height="29px">
+				<path fill-rule="evenodd"  fill="rgb(247, 244, 241)"
+				d="M0.867,14.728 L15.009,0.585 L29.151,14.728 L15.009,28.870 L0.867,14.728 Z"/>
+				</svg>
+				<p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+			</li>
+		</ul>
+	</section>
+	<section class="news">
+		<h3 class="">Новости</h3>
+		<ul>
+			<li>
+				<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+			</li>
+				<time datetime="2021-01-11">11 января</time>
+			<li>
+				<p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+			</li>
+				<time datetime="2021-01-18">18 января</time>
+		</ul>
+		<a class="button" href="news.html">Все новости</a>
+	</section>
+	<div id="space"><img src="space.png" alt="|"></div>
+	<section class="galery">
+		<h3>Фотогалерея</h3>
+		<figure class="galery-content">
+		</figure>
+		<span class="button-back">Назад</span>
+		<span class="button-next">Вперёд</span>
+	</section>
+	<section class="contacts-info">
+		<h3>Контактная информация</h3>
+		<p>Барбершоп «Бородинский» <br>
+		Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
+		Телефон: +7 (812) 666-02-66</p>
+		<p>Время работы:<br>
+		пн—пт: с 10:00 до 22:00<br>
+		сб—вс: с 10:00 до 19:00</p>
+		<a class="button" href="map.html">Как проехать</a>
+		<a class="button" href="contacts.html">Обратная связь</a>
+	</section>
+	<div id="space2"><img src="space.png" alt="|"></div>
+	<section class="sign">
+		<h3>Записаться</h3>
+		<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+	</section>
+	</main>
+	<footer>
+		<p>Барбершоп «Бородинский»<br>
+		Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+		<a href="map.html">Как нас найти?</a><br>
+		Телефон: +7 (812) 666-02-66</p>
+		<div class="social">
+			<b>Давайте дружть</b>
+			<ul>
+				<li>
+					<a class="button-soc" href="#">Вконтакте</a>
+					<a class="button-soc"href="#">Фейсбук</a>
+					<a class="button-soc" href="#">Инстаграм</a>
+				</li>
+			</ul>
+		</div>
+		<p class="copyright">Разработано:<a href="https://github.com/maks-xex">Maks-xex</a></p>
+	</footer>
+</body>
 </html>
