@@ -35,6 +35,7 @@ body{
 	max-width:2560px;
 	max-height:1756px;
 	background-size:cover;
+	font-style:normal;
 	font-family: PT Sans Narrow, sans-serif;
 	font-weight:bold;
 }
@@ -64,9 +65,11 @@ nav.Header{
 .site-nav{
 	margin-top:26px;
 	display:flex;
-	margin-right:330px;
+	margin-right:20%;
 	list-style-type:none;
 	flex-direction: row;
+	margin-left:auto;
+	padding:0;
 }
 a.nav{
 	text-decoration:none;
@@ -102,6 +105,7 @@ a.nav{
 	margin-top:26px;
 	order:6;
     list-style-type: none;
+	margin-right:auto;
 }
 main{
 	display:grid;
