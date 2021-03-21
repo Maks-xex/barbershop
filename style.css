@@ -1,32 +1,30 @@
-	@font-face {
-			font-family: "PTSansRegular";
-			src: url("../fonts/PTSansRegular/PTSansRegular.eot");
-			src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
-			url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
-			url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
-			font-style: normal;
-			font-weight: normal;
-	}
-
-	@font-face {
-			font-family: "PTSansItalic";
-			src: url("../fonts/PTSansItalic/PTSansItalic.eot");
-			src: url("../fonts/PTSansItalic/PTSansItalic.eot?#iefix")format("embedded-opentype"),
-			url("../fonts/PTSansItalic/PTSansItalic.woff") format("woff"),
-			url("../fonts/PTSansItalic/PTSansItalic.ttf") format("truetype");
-			font-style: normal;
-			font-weight: normal;
-	}
-
-	@font-face {
-			font-family: "PTSansBold";
-			src: url("../fonts/PTSansBold/PTSansBold.eot");
-			src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"),
-			url("../fonts/PTSansBold/PTSansBold.woff") format("woff"),
-			url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
-			font-style: normal;
-			font-weight: normal;
-	}
+@font-face {
+		font-family: "PTSansRegular";
+		src: url("../fonts/PTSansRegular/PTSansRegular.eot");
+		src: url("../fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
+		url("../fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+@font-face {
+		font-family: "PTSansItalic";
+		src: url("../fonts/PTSansItalic/PTSansItalic.eot");
+		src: url("../fonts/PTSansItalic/PTSansItalic.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/PTSansItalic/PTSansItalic.woff") format("woff"),
+		url("../fonts/PTSansItalic/PTSansItalic.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+@font-face {
+		font-family: "PTSansBold";
+		src: url("../fonts/PTSansBold/PTSansBold.eot");
+		src: url("../fonts/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/PTSansBold/PTSansBold.woff") format("woff"),
+		url("../fonts/PTSansBold/PTSansBold.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
 
 body{
 	background-image:url("Layer.jpg");
@@ -38,6 +36,7 @@ body{
 	font-style:normal;
 	font-family: PT Sans Narrow, sans-serif;
 	font-weight:bold;
+	line-height: 1.714em;
 }
 .logo{
 	text-align: center;
@@ -100,6 +99,7 @@ a.nav{
 	opacity:0.5;
 	vertical-align:middle;
 	margin-right:13px;
+	width:15px;
 }
 .enter{
 	margin-top:26px;
@@ -155,7 +155,7 @@ main{
 .Benefits-nav svg{
 	margin-top:10px;
 }
-p{
+p {
 	font-size:14px;
 	line-height:1.714em;
 	width:280px;
@@ -186,18 +186,20 @@ p{
 	grid-row:2/3;
 	
 }
-#space{
+.space{	
+	width:10px;
 	grid-row:2/3;
 	grid-column:2/3;
 	align-self: center;
 	z-index:1500;
 }
-#space2{
+.space2{ 
 	grid-row:3/3;
 	grid-column:2/3;
 	align-self: center;
 	z-index:1500;
-}
+	width:10px;
+} 
 .contacts-info{
 	background-image: url(background.jpg);
     background-repeat: repeat;
@@ -219,25 +221,94 @@ p{
 	grid-column:2/3;
 	grid-row:3/3;
 }
+form{
+	display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+	width: 300px;
+	margin:0;
+}
+form p, input  {
+	width:130px;
+	align-items: flex-start;
+	flex-grow:1;
+}
+.button {
+	padding:10px;
+	border-radius:5px;
+	background: black;
+    color: white;
+    text-decoration: none;
+	flex:auto;
+}
+/* form p{ */
+	/* align-items: flex-end; */
+    /* width: 150px; */
+    /* margin: 0; */
+/* } */
 footer{
 	background-image:url(footer.jpg);
+	height: 193px;
 	margin-top:65px;
 	width:auto;
 	display:flex;
     justify-content: center;
 	color:#ffffff;
+	font-size: 0.8750em;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+}
+footer a{
+	color:#ffffff;
 }
 footer p {
 	width:310px;
+	margin-top: 62px;
 }
 footer ul{
-	list-style-type:none;
+	list-style-type: none;
+    padding: 0px;
+    display: flex;
+    margin: 0px;
+	margin-top: 20px;
+}
+footer li{
+    background: black;
+    margin-right: 6px;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+	border: solid;
+	color:black;
+}
+footer li > a{
+	display:block;
+	text-decoration:none;
+	height:inherit;
 }
 .social{
-	width:140px;
-	padding-right:260px;
-	padding-left:90px;
+    width: 141px;
+	height: 75px;
+    padding-right: 260px;
+    padding-left: 90px;
+    flex-flow: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	margin-top: 62px;
 }
-p.copyright{
+.button-soc svg{
+	padding-top:6px;
+	vertical-align: -webkit-baseline-middle;
+}
+.copyright{
 	width:140px;
+}
+.copyright > a{
+	padding:5px;
+	text-decoration:none;
+	background-color:black;
+	border:0px solid;
+	outline-width:10px solid black;
 }
