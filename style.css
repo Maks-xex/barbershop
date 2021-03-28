@@ -70,10 +70,19 @@ nav.Header{
 	margin-left:auto;
 	padding:0;
 }
-a.nav{
+ul li > a{
 	text-decoration:none;
-	color:#ffffff;
+	color:white;
 }
+ul:first-child li>a:hover{
+	text-decoration:underline;
+}
+/* nav:hover{ */
+	/* text-decoration:underline; */
+/* } */
+/* nav :last-child >ul:hover{ */
+	/* text-decoration:none; */
+/* } */
 .about{
 	order:1;
 	padding-right:40px;
@@ -240,6 +249,14 @@ form p, input  {
     color: white;
     text-decoration: none;
 	flex:auto;
+	border-style: none;
+	cursor: pointer;
+}
+.button:hover { 
+	background: linear-gradient(#000000d4, #000000d4 ) #443f3fd4; 
+}
+.button:active { 
+	background: linear-gradient(#000000, #4e4d4deb) #0000009e; 
 }
 /* form p{ */
 	/* align-items: flex-end; */
@@ -265,6 +282,9 @@ footer p {
 	width:310px;
 	margin-top: 62px;
 }
+footer > p:first-child > a:hover{
+    color: black;
+}
 footer ul{
 	list-style-type: none;
     padding: 0px;
@@ -285,6 +305,9 @@ footer li > a{
 	display:block;
 	text-decoration:none;
 	height:inherit;
+}
+footer li > a:hover{
+	color:#66c0f4;
 }
 .social{
     width: 141px;
@@ -311,4 +334,7 @@ footer li > a{
 	background-color:black;
 	border:0px solid;
 	outline-width:10px solid black;
+}
+.copyright > a:hover{
+	text-decoration:underline;
 }
