@@ -282,7 +282,7 @@ footer p {
 	width:310px;
 	margin-top: 62px;
 }
-footer > p:first-child > a:hover{
+footer > p:first-child > a:hover {
     color: black;
 }
 footer ul{
