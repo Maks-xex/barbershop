@@ -10,31 +10,36 @@
 <body>
 	<header class="main-header">
 		<nav class="Header">
-			<ul class="site-nav">
-				<li class="about">
-					<a href="/">Информация</a>
-				</li>
-				<li class="nav-news">
-					<a href="/">Новости</a>
-				</li>
-				<li class="pricelist">
-					<a href="/">Прайс-лист</a>
-				</li>
-				<li class="shop">
-					<a href="/">Магазин</a>
-				</li>
-				<li class="contact">
-					<a href="/">Контакты</a>
-				</li>
-			</ul >
-			<ul class="enter">
-				<li>
-					<a class="nav" href="/"><img id="login" src="login.svg" alt="login">Вход</a>
-				</li>
-			</ul>
+			<div class="wraper">
+				<ul class="site-nav">
+					<li class="about">
+						<a href="/"><span>Информация</span></a>
+					</li>
+					<li class="nav-news">
+						<a href="/"><span>Новости</span></a>
+					</li>
+					<li class="pricelist">
+						<a href="/"><span>Прайс-лист</span></a>
+					</li>
+					<li class="shop">
+						<a href="/"><span>Магазин</span></a>
+					</li>
+					<li class="contact">
+						<a href="/"><span>Контакты</span></a>
+					</li>
+				</ul>
+				<ul class="login-form">
+					<li>
+						<a class="log" id="logi" onclick="document.getElementById('login-form').style.display='block'" href="#">
+						<span><img class="login" src="login.svg" alt="login">
+						Вход</span></a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 			<a class="logo">
 				<img src="logo.svg" width="368" height="153" alt="logo barbershop">
+				
 			</a>
 	</header>
 	<main class="main">
@@ -113,8 +118,8 @@
 	<div class="space2"><img src="space.png" alt="|"></div>
 	<section class="sign">
 		<h3>Записаться</h3>
-		<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-		<form id="Reg" action="../" method="get">
+		<p class="heading">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+		<form class="apointment" id="Reg" action="https://echo.htmlacademy.ru" method="get">
 			<p><label for="Data">Дата</label><br>
 			<input type="text" id="Data" name="Date" placeholder="01.01.2021"></p>
 			<p><label for="Time">Время</label><br>
@@ -128,7 +133,8 @@
 	</section>
 	</main>
 	<footer>
-		<p>Барбершоп «Бородинский»<br>
+	<div class="container">
+		<p class="about-us">Барбершоп «Бородинский»<br>
 		Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
 		<a href="map.html">Как нас найти?</a><br>
 		Телефон: +7 (812) 666-02-66</p>
@@ -153,7 +159,36 @@
 			</ul>
 		</div>
 		<p class="copyright">Разработано:<br><a href="https://github.com/maks-xex">Maks-xex</a></p>
+	</div>
 	</footer>
+	<div class="wrap" id="id01">
+		<button class="modal-close" type="button"><img src="close-modal.svg" alt="закрыть"></button>
+	<section class="modal-login">
+		<h2>Личный кабинет</h2>
+		<p>Введите пожалуйста свой логин и пароль</p>
+		<form id="login-form" action="#" method="post">
+			<p>
+			<label for="login">
+				<input id="login" type="text" name="Login" placeholder="Логин">
+				<img src="user.svg" alt="user-logo">
+			</label>
+			</p>
+			<p>
+			<label for="password">
+				<input id="password" type="password" name="Password" placeholder="Пароль">
+				<img src="lock.svg" alt="lock-logo">
+			</label>
+			</p>
+			<p class="login-info">
+				<label>
+				<span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/></svg></span><input type="checkbox" name="remember""><span class="checkbox-ind">Запомни меня</span>
+				</label>
+				<a class="restore" href="#">я забыл пароль!</a>
+			</p>
+			<button class="button" type="submit" form="login-form">Войти</button>
+		</form>
+	</section>
+	</div>
 </body>
 </html>
 
