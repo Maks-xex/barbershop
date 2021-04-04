@@ -28,7 +28,7 @@
 p {
 	font-size:14px;
 	line-height:1.714em;
-	width:280px;
+	width:298px;
 }
 b{
 	line-height:1.714em;
@@ -151,11 +151,13 @@ ul.site-nav li >a:active span{
 
 /* Main */
 main{
+	font-size:0.875em;
 	display:grid;
 	grid-gap:10px;
 	grid-auto-rows:minmax(100px, auto);
 	justify-content:center;
 	row-gap:36px;
+	text-transform:uppercase;
 }
 .Benefits{
 	color:#f7f4f1;
@@ -208,21 +210,27 @@ main{
     grid-column: 1/3;
     grid-row: 2/3;
 }
-.news ul{
+.news li{
+	margin:0 0 20px 0;
+}
+.news ul,
+.news p
+{
 	list-style-type: none;
-    width: 280px;
+    width: 342px;
 	padding:0;
+	margin:24px 0 35px 0;
 }
 .news p,
 .contacts-info p,
 .news time,
-.contacts-info time ,
+.contacts-info time,
 p.heading
 {
-	padding-left:10px;
+	margin:0;
 }
-p.heading{
-	margin:14px 0 0 0;
+.news .button{
+	padding: 12.8px 33.73px;
 }
 .galery {
 	background-image: url(background.jpg);
@@ -234,6 +242,12 @@ p.heading{
 	grid-column:2/3;
 	grid-row:2/3;
 	
+}
+.galery-content{
+	margin:22px auto 41.6px 0;
+}
+.galery-content img{ 
+	border:7px solid white
 }
 .space{	
 	width:10px;
@@ -259,8 +273,36 @@ p.heading{
 	grid-column:1/3;
 	grid-row:3/3;
 }
+.contacts-info > p:last-of-type{
+	margin:14px 0 36px 0;
+}
+.contacts-info .button{
+	padding: 12.8px 30.75px;
+}
+.contacts-info .button:last-child{
+	padding:12.8px 25.08px;
+	margin-left:17px;
+}
+.location{
+	position:fixed;
+	left:28.5%;
+	top:20%;
+	width:766px;
+	height:560.3px;
+	border:7px solid white;
+	opacity:1;
+	z-index:1600;
+	background-image:url(map.jpg);
+	box-shadow: 0px 30px 50px 5px rgb(0 0 0 / 75%);	
+}
+.location button.modal-close,
+.location img.modal-close
+{
+	margin:0 0 0 390px;
+	position:absolute;
+}
 .sign{
-	
+	background-color:#f9f6f3;
 	background-image: url(background.jpg);
     background-repeat: repeat;
     width: 381px;
@@ -291,10 +333,16 @@ p.heading{
 	background-color: #f8f3f0;
     background-image: url(background.jpg);
 }
+.apointment .button{
+	padding:8.4px 52.35px;
+}
 
-.button {
+.button,
+.button-back,
+.button-next
+ {
 	font: inherit;
-	padding:10px;
+	padding:12.8px 52.35px;
 	border-radius:5px;
 	background: black;
     color: white;
@@ -303,10 +351,16 @@ p.heading{
 	cursor: pointer;
 	width:inherit;
 }
-.button:hover { 
+.button:hover,
+.button-back:hover,
+.button-next:hover 
+{ 
 	background: linear-gradient(#663d15, #663d15 ) #663d15; 
 }
-.button:active { 
+.button:active,
+.button-back:active,
+.button-next:active 
+{ 
 	background: linear-gradient(#4a2501, #73583e7a) #663d15;
 }
 /* Main end */
@@ -409,8 +463,8 @@ p.copyright{
 /* Footer end */
 
 /* Login modal */
-.wrap {
-	display: block;
+.wrap{
+	display: none;
     position: fixed;
     left: 40%;
     top: 10%;
@@ -419,13 +473,6 @@ p.copyright{
 }
 input[type="checkbox"]{
 	visibility:hidden;
-}
-input[type="checkbox"]:checked + label::before {
-	fill:black;
-	color:black
-}
-input[type="checkbox"]:checked + label::after {
-	fill:white;
 }
 .modal-login svg{
 	fill:white;
@@ -447,6 +494,7 @@ opacity: 0.5;
     width: 19px;
 	cursor:pointer;
 	outline:none;
+	opacity:1;
 }
 .modal-login {
 	text-transform: uppercase;
@@ -457,6 +505,7 @@ opacity: 0.5;
     background-repeat: repeat;
     width: 300px;
     padding: 45.27px 80px;
+	box-shadow: 0px 30px 50px 5px rgb(0 0 0 / 75%);
 }
 .modal-login form p > a{
 	color:black;
@@ -497,6 +546,13 @@ opacity: 0.5;
 
 .login-info input{
 	margin:0 12px 0 auto;
+}
+span.checkbox{
+	position:relative;
+	top:1.5px;
+}
+a.restore:hover{
+	color: purple;
 }
 .restore{
 	float:right;
