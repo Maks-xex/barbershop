@@ -37,7 +37,7 @@ b{
 	line-height:1.714em;
 }
 body{
-	background-image:url("background-main.jpg");
+	background-image:url("./Img/background-main.jpg");
 	background-attachment:fixed;
 	margin:0px;
 	max-width:2560px;
@@ -204,7 +204,7 @@ main{
 	margin-top:10px;
 }
 .news{
-	background-image: url(background.jpg);
+	background-image: url(./Img/background.jpg);
     background-repeat: repeat;
     width: 391px;
     height: 366px;
@@ -236,7 +236,7 @@ p.heading
 	padding: 12.8px 33.73px;
 }
 .galery {
-	background-image: url(background.jpg);
+	background-image: url(./Img/background.jpg);
     background-repeat: repeat;
     width: 381px;
     height: 366px;
@@ -270,7 +270,7 @@ p.heading
 	width:10px;
 } 
 .contacts-info{
-	background-image: url(background.jpg);
+	background-image: url(./Img/background.jpg);
     background-repeat: repeat;
     width: 391px;
     height: 366px;
@@ -298,7 +298,7 @@ p.heading
 	border:7px solid white;
 	opacity:1;
 	z-index:1600;
-	background-image:url(map.jpg);
+	background-image:url(./Img/map.jpg);
 	box-shadow: 0px 30px 50px 5px rgb(0 0 0 / 75%);	
 }
 .location button.modal-close,
@@ -309,7 +309,7 @@ p.heading
 }
 .sign{
 	background-color:#f9f6f3;
-	background-image: url(background.jpg);
+	background-image: url(./Img/background.jpg);
     background-repeat: repeat;
     width: 381px;
     height: 366px;
@@ -337,7 +337,7 @@ p.heading
     width: 116px;
     padding: 10px;
 	background-color: #f8f3f0;
-    background-image: url(background.jpg);
+    background-image: url(./Img/background.jpg);
 }
 .apointment .button{
 	padding:8.4px 52.35px;
@@ -373,7 +373,7 @@ p.heading
 
 /* Footer */
 footer{
-	background-image:url(footer.jpg);
+	background-image:url(./Img/footer.jpg);
 	width:auto;
 	display:flex;
     justify-content: center;
@@ -507,7 +507,7 @@ opacity: 0.5;
 	text-transform: uppercase;
     color: #000;
     background-color: #f8f3f0;
-    background-image: url(maps.jpg);
+    background-image: url(./Img/background.jpg);
     background-position: 0 0;
     background-repeat: repeat;
     width: 300px;
@@ -533,7 +533,7 @@ opacity: 0.5;
 }
 .modal-login p:nth-child(-n+2) label{
 	background-color: #f9f6f3;
-	background:url(maps.jpg);
+	background:url(./Img/background.jpg);
 	border:2px solid black;
 	padding:7px;
 	color:black;
@@ -542,7 +542,7 @@ opacity: 0.5;
 .modal-login input[type="password"] {
 	color:#000;
 	background-color:#f9f6f3;
-	background:url(maps.jpg);
+	background:url(./Img/background.jpg);
 	outline-style:none;
 	width:262px;
 }
