@@ -25,6 +25,9 @@
 		font-style: normal;
 		font-weight: normal;
 }
+video{
+	display:block;
+}
 p {
 	font-size:14px;
 	line-height:1.714em;
@@ -34,7 +37,7 @@ b{
 	line-height:1.714em;
 }
 body{
-	background-image:url("Layer.jpg");
+	background-image:url("background-main.jpg");
 	background-attachment:fixed;
 	margin:0px;
 	max-width:2560px;
@@ -249,6 +252,9 @@ p.heading
 .galery-content img{ 
 	border:7px solid white
 }
+.galery .button-back{
+	margin-right:17px;
+}
 .space{	
 	width:10px;
 	grid-row:2/3;
@@ -342,7 +348,7 @@ p.heading
 .button-next
  {
 	font: inherit;
-	padding:12.8px 52.35px;
+	padding:12.8px 51px;
 	border-radius:5px;
 	background: black;
     color: white;
@@ -368,7 +374,6 @@ p.heading
 /* Footer */
 footer{
 	background-image:url(footer.jpg);
-	height: 193px;
 	width:auto;
 	display:flex;
     justify-content: center;
@@ -376,11 +381,12 @@ footer{
 	font-size: 0.8750em;
 	text-transform: uppercase;
 	letter-spacing: 0.01em;
+	margin: 65px 0 0 0;
 }
 div.container {
 	width:940px;
 	display:flex;
-    margin: 65px auto 0;
+    margin: 62px auto 43px;
 	justify-content:space-between;
 }
 footer a{
@@ -435,6 +441,7 @@ footer li > a:hover{
 .social{
     width: 141px;
 	text-align:center;
+	margin: 0 80px 0 0;
 }
 .social li:hover, .social a:hover {
     background-color: white;
