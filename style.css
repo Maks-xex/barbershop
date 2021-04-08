@@ -482,9 +482,9 @@ input[type="checkbox"]{
 	visibility:hidden;
 }
 .modal-login svg{
-	fill:white;
 	border: 2px solid;
     position: absolute;
+	top:0.1px;
 }
 .modal-close img:hover {
 opacity: 0.5;
@@ -554,9 +554,10 @@ opacity: 0.5;
 .login-info input{
 	margin:0 12px 0 auto;
 }
-span.checkbox{
+span.checkbox, 
+.modal-login span{
 	position:relative;
-	top:1.5px;
+	user-select:none;
 }
 a.restore:hover{
 	color: purple;
@@ -566,8 +567,13 @@ a.restore:hover{
 }
 .modal-login form,
 .modal-login p,
-.modal-login label
-{
+.modal-login label{
 	width:inherit;
+}
+.modal-login label{
+	cursor:pointer;
+}
+.modal-login path{
+	opacity:0;
 }
 /* Login modal end */
