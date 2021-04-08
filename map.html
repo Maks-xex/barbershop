@@ -13,19 +13,19 @@
 			<div class="wraper" >
 				<ul class="site-nav">
 					<li class="about">
-						<a href="/"><span>Информация</span></a>
+						<a href="#"><span>Информация</span></a>
 					</li>
 					<li class="nav-news">
-						<a href="/"><span>Новости</span></a>
+						<a href="#"><span>Новости</span></a>
 					</li>
 					<li class="pricelist">
-						<a href="/"><span>Прайс-лист</span></a>
+						<a href="#"><span>Прайс-лист</span></a>
 					</li>
 					<li class="shop">
-						<a href="/"><span>Магазин</span></a>
+						<a href="#"><span>Магазин</span></a>
 					</li>
 					<li class="contact">
-						<a href="/"><span>Контакты</span></a>
+						<a href="#"><span>Контакты</span></a>
 					</li>
 				</ul>
 				<ul class="login-form">
@@ -180,19 +180,32 @@
 			</label>
 			</p>
 			<p class="login-info">
-				<label>
-				<span class="checkbox"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/></svg></span><input type="checkbox" name="remember""><span class="checkbox-ind">Запомни меня</span>
+				<label onclick="checkbox()">
+				<span class="checkbox"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path id="modal-checkbox" d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/></svg></span><input type="checkbox" id="check" name="remember""><span>Запомни меня</span>
 				</label>
 				<a class="restore" href="#">я забыл пароль!</a>
 			</p>
 			<button class="button" type="submit" form="login-form">Войти</button>
 		</form>
 	</section>
+	</div>	
 	</div>
 	<div class="popup-fade" id="map-close-modal">
 		<div class="location">
 		<button class="modal-close" onclick="document.getElementById('map-close-modal').style.display='none'" type="button"><img class="modal-close" src="./Img/close-modal.svg" alt="закрыть"></button>
 		</div>
 	</div>
+<script>
+function checkbox(){
+		var x = document.getElementById('modal-checkbox');
+		var i = document.getElementById('check');
+		if (i.checked == true){
+			x.style.opacity='1';
+		}
+		else {
+			x.style.opacity='0';
+		}
+}
+</script>
 </body>
 </html>
