@@ -36,35 +36,44 @@ p {
 b{
 	line-height:1.714em;
 }
+a{
+	color:black;
+	text-decoration:none;
+}
 body{
 	background-image:url("./Img/background-main.jpg");
 	background-attachment:fixed;
 	margin:0px;
-	max-width:2560px;
-	max-height:1756px;
 	background-size:cover;
 	font-style:normal;
 	font-family: PT Sans Narrow, sans-serif;
 	font-weight:bold;
 	line-height: 1.714em;
+	text-transform:uppercase;
 }
 /* Header */
 h2{
 	font-size:1.875em;
 	margin-top:0;
 }
+h4{
+	font-size:24px;
+}
+h1{
+	font-size:48px;
+}
 div.wraper{
+	width: 1200px;
+    display: flex;
+	margin:0 auto;
+}
+div.main-wraper{
 	width: 940px;
     display: flex;
 	margin:0 auto;
 }
-.logo{
-	text-align: center;
-}
 .main-header{
 	display:grid;
-	grid-gap:10px;
-	grid-auto-rows:minmax(100px, auto);
 }
 nav.Header{
 	text-transform:uppercase;
@@ -89,23 +98,35 @@ nav.Header{
 	padding:0;
 	margin-right:auto;
 }
-nav ul li > a{
+ul.site-nav li:not(.logo) > a{
 	text-decoration:none;
 	color:white;
-	padding: 22px;
+	padding: 32px;
     padding-bottom: 29.5px
 }
-ul.site-nav li>a:hover{
+.site-nav li > a:hover{
 	background-color: #242424;
+}
+a.logo{
+
+	text-align: center;
+	margin-top:60px;
+}
+li.logo{
+	margin-right:8px;
+}
+.site-nav .logo > a:hover{
+	background-color:transparent;
 }
 .log:not{
 	opacity:0.5;
 }
-ul.login-form a:hover img, .login-form a:hover{
+ul.login-form a:hover img, 
+.login-form a:hover{
 	opacity:1;
 	background-color: #242424;
 }
-nav ul:nth-child(n) >li{
+ul.site-nav>li:nth-child(n) {
 	padding:22px 0;
 }
 ul.site-nav li >a:active span{
@@ -113,7 +134,7 @@ ul.site-nav li >a:active span{
 	padding-bottom:25.7px;
 	border-bottom:4px solid white;
 }
-.about{
+.info{
 	order:1;
 	padding-right:40px;
 	padding: 22px;
@@ -123,6 +144,11 @@ ul.site-nav li >a:active span{
 	order:2;
 	padding-right:40px;
 	padding: 22px;
+}
+li.current-pricelist > a span{
+	padding:0px;
+	padding-bottom:25.7px;
+	border-bottom:4px solid white;
 }
 .pricelist{
 	order:3;
@@ -145,7 +171,14 @@ ul.site-nav li >a:active span{
 	padding-right:13px;
 	width:15px;
 }
+ul.login-form a{
+	text-decoration: none;
+    color: white;
+    padding: 22px;
+    padding-bottom: 29.5px;
+}
 .login-form{
+	padding:22px 0;
 	margin:0;
 	order:6;
     list-style-type: none;
@@ -153,7 +186,7 @@ ul.site-nav li >a:active span{
 /* Header end */
 
 /* Main */
-main{
+.main{
 	font-size:0.875em;
 	display:grid;
 	grid-gap:10px;
@@ -356,6 +389,7 @@ p.heading
 	border-style: none;
 	cursor: pointer;
 	width:inherit;
+	user-select:none;
 }
 .button:hover,
 .button-back:hover,
@@ -369,10 +403,16 @@ p.heading
 { 
 	background: linear-gradient(#4a2501, #73583e7a) #663d15;
 }
+.category-main{
+	width:auto;
+	background-image: url(./Img/background.jpg);
+	
+}
 /* Main end */
 
 /* Footer */
-footer{
+.main-footer,
+.category-footer{
 	background-image:url(./Img/footer.jpg);
 	width:auto;
 	display:flex;
@@ -383,11 +423,19 @@ footer{
 	letter-spacing: 0.01em;
 	margin: 65px 0 0 0;
 }
-div.container {
+.category-footer{
+	margin:0;
+    background-image: linear-gradient(180deg, #1b1b1b 5%, transparent 10%),url(./Img/footer.jpg);
+}
+div.main-container,
+div.category-footer-container {
 	width:940px;
 	display:flex;
     margin: 62px auto 43px;
 	justify-content:space-between;
+}
+div.category-footer-container {
+	width:1200px;
 }
 footer a{
 	color:#ffffff;
@@ -577,3 +625,97 @@ a.restore:hover{
 	opacity:0;
 }
 /* Login modal end */
+input:focus {
+	outline-color: #663d15;
+}
+
+/* Price-list page */
+
+.head{
+	padding:55px 0;
+	margin:0 auto;
+	width:1200px;
+}
+
+ul.nav {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:flex;
+	width:156px;
+	justify-content:space-between;
+	color:black;
+	text-decoration:none;
+	align-items:center;
+}
+ul.nav li:not(:first-child)>a{
+	pointer-events:none;
+	color:#aba9a7;
+}
+.head-pricelist:before{
+	margin-left:-100%;}
+.head-pricelist:after {
+	margin-right:-100%;}
+.head-pricelist:before,
+.head-pricelist:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	width: 25.6%;
+	height: 3px;
+	background: #000;
+	border: solid #000;
+	border-width: 0 10px;
+}
+.head-pricelist{
+	width:1200px;
+	margin:0 auto;
+	text-align:center;
+}
+div.price-wraper{
+	display:flex;
+	margin:0 auto;
+	width:1200px;
+	justify-content:space-between;
+	margin-top:38px;
+}
+.tool ul > li{
+	padding-bottom:20px;
+}
+.tool{
+	width:238px;
+	list-style:url("./img/rhombus.svg")
+}
+.service{
+	margin-right: 416px;
+    width: 175px;
+}
+.Price, .Price td{
+	width: 592px;
+    border: 2px solid black;
+    padding: 14px 0 14px 17px;
+}
+.Price td:nth-child(2n){
+	text-align:center;
+}
+div.about-wraper{
+	display:flex;
+	margin:0 auto;
+	width:1200px;
+	justify-content:space-between;
+}
+.about h3{
+	width:1200px;
+	padding-top: 27px;
+}
+.about p{
+	width:383px;
+}
+.about p:last-child{
+	margin-right: 214px;
+    width: 377px;
+	padding-bottom: 50px;
+}
+/* Price-list page end*/
+
