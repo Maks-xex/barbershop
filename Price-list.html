@@ -23,11 +23,11 @@
 					<li class="nav-news">
 						<a href="#"><span>Новости</span></a>
 					</li>
-					<li class="current-pricelist pricelist">
+					<li class="current pricelist">
 						<a href="Price-list.html"><span>Прайс-лист</span></a>
 					</li>
 					<li class="shop">
-						<a href="#"><span>Магазин</span></a>
+						<a href="Shop.html"><span>Магазин</span></a>
 					</li>
 					<li class="contact">
 						<a href="#"><span>Контакты</span></a>
@@ -35,7 +35,7 @@
 				</ul>
 				<ul class="login-form">
 					<li>
-						<a class="log" onclick="document.getElementById('modal-form').style.display='block'" href="#">
+						<a class="log" href="#">
 						<span><img class="login" src="./Img/login.svg" alt="login">
 						Вход</span></a>
 					</li>
@@ -52,7 +52,7 @@
 			</li>
 				<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path class="rhombus" d="M5.9,1.2L0.7,6.5l5.2,5.4l5.2-5.4L5.9,1.2z"/></svg>
 			<li>
-				<a href="Price-list.html" disabled>прайс-лист</a>
+				<a href="Price-list.html">прайс-лист</a>
 			</li>
 		</ul>
 		</div>
@@ -132,12 +132,12 @@
 		<p class="copyright">Разработано:<br><a href="https://github.com/maks-xex">Maks-xex</a></p>
 	</div>
 	</footer>
-	<div class="wrap" id="modal-form">
-		<button class="modal-close" onclick="document.getElementById('modal-form').style.display='none'" type="button"><img src="./Img/close-modal.svg" alt="закрыть"></button>
+	<div class="modal-form">
+		<button class="modal-close" type="button"><img src="./Img/close-modal.svg" alt="закрыть"></button>
 	<section class="modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите пожалуйста свой логин и пароль</p>
-		<form id="login-form" action="#" method="post">
+		<form id="login-form" action="https://echo.htmlacademy.ru" method="post">
 			<p>
 			<label for="login">
 				<input id="login" type="text" name="Login" placeholder="Логин">
@@ -152,7 +152,7 @@
 			</p>
 			<p class="login-info">
 				<label onclick="checkbox()">
-				<span class="checkbox"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path id="modal-checkbox" d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/></svg></span><input type="checkbox" id="check" name="remember""><span>Запомни меня</span>
+				<span class="modalcheckbox"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path id="modal-checkbox" d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/></svg></span><input type="checkbox" id="check" name="remember"><span>Запомни меня</span>
 				</label>
 				<a class="restore" href="#">я забыл пароль!</a>
 			</p>
@@ -160,18 +160,7 @@
 		</form>
 	</section>
 	</div>	
-<script>
-function checkbox(){
-		var x = document.getElementById('modal-checkbox');
-		var i = document.getElementById('check');
-		if (i.checked == true){
-			x.style.opacity='1';
-		}
-		else {
-			x.style.opacity='0';
-		}
-}
-</script>
+<script src="scripts.js"></script>
 </body>
 </html>
 
